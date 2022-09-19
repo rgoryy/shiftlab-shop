@@ -3,21 +3,21 @@ package com.example.shiftlabshop.repository.model;
 import java.math.BigDecimal;
 
 public class HardDiskEntity extends ProductEntity{
-    private Long capacityInGB;
+    private int capacityInGB;
 
     public HardDiskEntity() {
     }
 
-    public HardDiskEntity(String productSerialNumber, String manufacturer, BigDecimal price, Integer numOfProductUnitsInStock, Long capacityInGB) {
-        super(productSerialNumber, manufacturer, price, numOfProductUnitsInStock);
+    public HardDiskEntity(String productSerialNumber, String manufacturer, BigDecimal price, Integer numOfProductUnitsInStock, Integer type, int capacityInGB) {
+        super(productSerialNumber, manufacturer, price, numOfProductUnitsInStock, type);
         this.capacityInGB = capacityInGB;
     }
 
-    public Long getCapacityInGB() {
+    public int getCapacityInGB() {
         return capacityInGB;
     }
 
-    public void setCapacityInGB(Long capacityInGB) {
+    public void setCapacityInGB(int capacityInGB) {
         this.capacityInGB = capacityInGB;
     }
 }

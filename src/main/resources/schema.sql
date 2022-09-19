@@ -3,7 +3,8 @@ create table products (
       serial_num varchar(20) not null,
       manufacturer varchar(200) not null,
       price numeric not null,
-      units integer not null
+      units integer not null,
+      p_type integer not null
 );
 
 create table laptops(
@@ -55,3 +56,8 @@ create table desktops(
 alter table desktops
     add constraint unique_desktop_id
         unique (desktop_id);
+
+-- 1 = ноутбук
+-- 2 = монитор
+-- 3 = жесткий диск
+-- 4 = настольные компьютеры

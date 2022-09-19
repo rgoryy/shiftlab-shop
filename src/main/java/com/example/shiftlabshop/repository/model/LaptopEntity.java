@@ -7,8 +7,8 @@ public class LaptopEntity extends ProductEntity{
     public LaptopEntity() {
     }
 
-    public LaptopEntity(String productSerialNumber, String manufacturer, BigDecimal price, Integer numOfProductUnitsInStock, int diagonal) {
-        super(productSerialNumber, manufacturer, price, numOfProductUnitsInStock);
+    public LaptopEntity(String productSerialNumber, String manufacturer, BigDecimal price, Integer numOfProductUnitsInStock, Integer type, int diagonal) {
+        super(productSerialNumber, manufacturer, price, numOfProductUnitsInStock, type);
         this.diagonal = diagonal;
     }
 
@@ -20,7 +20,6 @@ public class LaptopEntity extends ProductEntity{
         this.diagonal = diagonal;
     }
 
-    //TODO USE ENUM
     /*private LaptopDiag diagonal;
 
     public LaptopEntity() {

@@ -17,6 +17,7 @@ public class DesktopComputerEntityRowMapper implements RowMapper<DesktopComputer
         result.setPrice(rs.getBigDecimal("price"));
         result.setNumOfProductUnitsInStock(rs.getInt("units"));
         result.setProductSerialNumber(rs.getString("serial_num"));
+        result.setType(rs.getInt("p_type"));
 
         result.setFormFactor(rs.getInt("form_factor"));
         result.setId(rs.getInt("id"));

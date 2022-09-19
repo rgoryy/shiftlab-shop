@@ -3,13 +3,13 @@ package com.example.shiftlabshop.repository.model;
 import java.math.BigDecimal;
 
 public class DesktopComputerEntity extends ProductEntity{
-    private int formFactor; //range 1-3
+    private int formFactor;
 
     public DesktopComputerEntity() {
     }
 
-    public DesktopComputerEntity(String productSerialNumber, String manufacturer, BigDecimal price, Integer numOfProductUnitsInStock, int formFactor) {
-        super(productSerialNumber, manufacturer, price, numOfProductUnitsInStock);
+    public DesktopComputerEntity(String productSerialNumber, String manufacturer, BigDecimal price, Integer numOfProductUnitsInStock, Integer type, int formFactor) {
+        super(productSerialNumber, manufacturer, price, numOfProductUnitsInStock, type);
         this.formFactor = formFactor;
     }
 
@@ -21,7 +21,6 @@ public class DesktopComputerEntity extends ProductEntity{
         this.formFactor = formFactor;
     }
 
-    //TODO USE ENUM
     /*private DesktopComputerFormFactor formFactor;
 
     public DesktopComputerEntity() {

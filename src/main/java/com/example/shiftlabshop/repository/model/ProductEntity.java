@@ -8,15 +8,19 @@ public abstract class ProductEntity {
     private String manufacturer;
     private BigDecimal price;
     private Integer numOfProductUnitsInStock;
+    private Integer type;
+
+
 
     public ProductEntity(){
     }
 
-    public ProductEntity(String productSerialNumber, String manufacturer, BigDecimal price, Integer numOfProductUnitsInStock) {
+    public ProductEntity(String productSerialNumber, String manufacturer, BigDecimal price, Integer numOfProductUnitsInStock, Integer type) {
         this.productSerialNumber = productSerialNumber;
         this.manufacturer = manufacturer;
         this.price = price;
         this.numOfProductUnitsInStock = numOfProductUnitsInStock;
+        this.type = type;
     }
 
     public String getProductSerialNumber() {
@@ -48,6 +52,14 @@ public abstract class ProductEntity {
 
     public void setPrice(BigDecimal price) {
         this.price = price;
+    }
+
+    public Integer getType() {
+        return type;
+    }
+
+    public void setType(Integer type) {
+        this.type = type;
     }
 
     public Integer getNumOfProductUnitsInStock() {

@@ -7,8 +7,8 @@ public class MonitorEntity extends ProductEntity{
 
     public MonitorEntity() {}
 
-    public MonitorEntity(String productSerialNumber, String manufacturer, BigDecimal price, Integer numOfProductUnitsInStock, double diagonal) {
-        super(productSerialNumber, manufacturer, price, numOfProductUnitsInStock);
+    public MonitorEntity(String productSerialNumber, String manufacturer, BigDecimal price, Integer numOfProductUnitsInStock, Integer type, double diagonal) {
+        super(productSerialNumber, manufacturer, price, numOfProductUnitsInStock, type);
         this.diagonal = diagonal;
     }
 
