@@ -8,7 +8,8 @@ public class HardDiskEntity extends ProductEntity{
     public HardDiskEntity() {
     }
 
-    public HardDiskEntity(String productSerialNumber, String manufacturer, BigDecimal price, Integer numOfProductUnitsInStock, Integer type, int capacityInGB) {
+    public HardDiskEntity(String productSerialNumber, String manufacturer, BigDecimal price,
+                          Integer numOfProductUnitsInStock, Integer type, int capacityInGB) {
         super(productSerialNumber, manufacturer, price, numOfProductUnitsInStock, type);
         this.capacityInGB = capacityInGB;
     }

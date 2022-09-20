@@ -7,7 +7,8 @@ public class LaptopEntity extends ProductEntity{
     public LaptopEntity() {
     }
 
-    public LaptopEntity(String productSerialNumber, String manufacturer, BigDecimal price, Integer numOfProductUnitsInStock, Integer type, int diagonal) {
+    public LaptopEntity(String productSerialNumber, String manufacturer, BigDecimal price,
+                        Integer numOfProductUnitsInStock, Integer type, int diagonal) {
         super(productSerialNumber, manufacturer, price, numOfProductUnitsInStock, type);
         this.diagonal = diagonal;
     }
@@ -19,22 +20,4 @@ public class LaptopEntity extends ProductEntity{
     public void setDiagonal(int diagonal) {
         this.diagonal = diagonal;
     }
-
-    /*private LaptopDiag diagonal;
-
-    public LaptopEntity() {
-    }
-
-    public LaptopEntity(String productSerialNumber, String manufacturer, BigDecimal price, Integer numOfProductUnitsInStock, LaptopDiag diagonal) {
-        super(productSerialNumber, manufacturer, price, numOfProductUnitsInStock);
-        this.diagonal = diagonal;
-    }
-
-    public LaptopDiag getDiagonal() {
-        return diagonal;
-    }
-
-    public void setDiagonal(LaptopDiag diagonal) {
-        this.diagonal = diagonal;
-    }*/
 }

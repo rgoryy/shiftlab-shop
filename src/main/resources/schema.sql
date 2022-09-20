@@ -57,7 +57,3 @@ alter table desktops
     add constraint unique_desktop_id
         unique (desktop_id);
 
--- 1 = ноутбук
--- 2 = монитор
--- 3 = жесткий диск
--- 4 = настольные компьютеры
